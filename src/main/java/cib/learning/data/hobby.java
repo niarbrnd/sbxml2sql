@@ -1,4 +1,4 @@
-package cib.learning.data;
+package Cib.learning.data;
 
 
 import lombok.Getter;

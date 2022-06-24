@@ -1,6 +1,6 @@
-package cib.learning.data;
+package Cib.learning.data;
 
-import cib.learning.adapter.DateAdapter;
+import Cib.learning.adapter.DateAdapter;
 import lombok.Getter;
 import lombok.Setter;
 

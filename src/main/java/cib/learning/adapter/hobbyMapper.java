@@ -1,6 +1,6 @@
-package cib.learning.adapter;
+package Cib.learning.adapter;
 
-import cib.learning.data.hobby;
+import Cib.learning.data.hobby;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

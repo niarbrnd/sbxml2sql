@@ -1,4 +1,4 @@
-package cib.learning.adapter;
+package Cib.learning.adapter;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 import java.text.ParseException;

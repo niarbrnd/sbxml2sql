@@ -1,4 +1,4 @@
-package cib.learning.sbxml2sql
+package Cib.learning.sbxml2sql
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

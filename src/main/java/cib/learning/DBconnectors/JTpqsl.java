@@ -1,10 +1,10 @@
-package cib.learning.DBconnectors;
+package Cib.learning.DBconnectors;
 
-import cib.learning.adapter.hobbyMapper;
-import cib.learning.adapter.personMapper;
-import cib.learning.data.Person;
-import cib.learning.data.Persons;
-import cib.learning.data.hobby;
+import Cib.learning.adapter.hobbyMapper;
+import Cib.learning.adapter.personMapper;
+import Cib.learning.data.Person;
+import Cib.learning.data.Persons;
+import Cib.learning.data.hobby;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;

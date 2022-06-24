@@ -1,10 +1,10 @@
-package cib.learning;
+package Cib.learning;
 
-import cib.learning.Service.arguments;
-import cib.learning.DBconnectors.JTpqsl;
-import cib.learning.DBconnectors.pgsql;
-import cib.learning.data.Persons;
-import cib.learning.Service.xml;
+import Cib.learning.Service.arguments;
+import Cib.learning.DBconnectors.JTpqsl;
+import Cib.learning.DBconnectors.pgsql;
+import Cib.learning.data.Persons;
+import Cib.learning.Service.xml;
 
 import javax.xml.bind.JAXBException;
 import java.io.IOException;

@@ -1,8 +1,8 @@
-package cib.learning.DBconnectors;
+package Cib.learning.DBconnectors;
 
-import cib.learning.data.Person;
-import cib.learning.data.Persons;
-import cib.learning.data.hobby;
+import Cib.learning.data.Person;
+import Cib.learning.data.Persons;
+import Cib.learning.data.hobby;
 
 import java.sql.*;
 import java.text.SimpleDateFormat;

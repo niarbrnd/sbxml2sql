@@ -1,4 +1,4 @@
-package cib.learning.data;
+package Cib.learning.data;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
