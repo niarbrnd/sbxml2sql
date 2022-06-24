@@ -16,7 +16,7 @@ class Xml {
         val filexml: FileReader
         try {
             println("FileReader "+pathtoxml)
-            filexml =FileReader(pathtoxml)
+            filexml =FileReader(pathtoxml.toString())
 
         } catch (e: FileNotFoundException) {
             println("file xml $pathtoxml not found")
@@ -28,6 +28,7 @@ class Xml {
             val context: JAXBContext = JAXBContext.newInstance(Persons::class.java)
             pers = context.createUnmarshaller()
                 .unmarshal(filexml) as Persons
+            //println(per)
         } catch (e: JAXBException) {
             println("JAXB Failed")
             e.printStackTrace()

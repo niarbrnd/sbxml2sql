@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlRootElement
 @XmlRootElement(name = "hobby")
 @XmlAccessorType(XmlAccessType.FIELD)
 data class hobby(
-        @XmlElement
+        @field:XmlElement
         private var complexity: Int,
-        @XmlElement
+        @field:XmlElement
         private var hobby_name: String){
         constructor():this (0,"")
 }

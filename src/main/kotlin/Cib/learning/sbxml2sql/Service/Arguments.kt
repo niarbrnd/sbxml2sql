@@ -16,8 +16,9 @@ class Arguments {
         while (i < args.size) {
             if (args[i].get(0) == '-') {
                 System.out.println("Found dash with command " +
-                        args[i] + " and value " + args[i + 1]);
+                        args[i] + " and value " + args[i + 1])
                 options[args[i]] = args[i + 1]
+                i++
             } else {
                 println("Parametr is bad " + args[i])
             }

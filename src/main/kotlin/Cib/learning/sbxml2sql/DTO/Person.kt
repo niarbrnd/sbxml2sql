@@ -2,16 +2,17 @@ package Cib.learning.sbxml2sql.DTO
 
 import java.util.*
 import javax.xml.bind.annotation.*
+import kotlin.collections.ArrayList
 
 @XmlRootElement(name = "Person")
 @XmlAccessorType(XmlAccessType.FIELD)
 data class Person(
         private var id: Int = 0,
-        @XmlElement
+        @field:XmlElement
         private val name: String? ,
-        @XmlElement
+        @field:XmlElement
         private val birthday: Date?,
         @XmlElementWrapper(name = "hobbies")
-        @XmlElement(name = "hobby")
-        val Hobbies: MutableCollection<hobby>
-){constructor():this(0,"",null,mutableListOf()) }
+        @field:XmlElement(name = "hobby")
+        val hobbies: List<hobby>?
+){constructor():this(0,null,null,null) }

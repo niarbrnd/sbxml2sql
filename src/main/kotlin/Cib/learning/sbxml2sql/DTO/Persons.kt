@@ -8,6 +8,6 @@ import javax.xml.bind.annotation.XmlRootElement
 @XmlRootElement(name = "Persons")
 @XmlAccessorType(XmlAccessType.FIELD)
 data class Persons(
-        @XmlElement(name = "Person")
-        private var People: MutableCollection<Person>
-){constructor():this(mutableListOf())}
+        @field:XmlElement(name = "Person")
+        private var People: List<Person>?=null
+)
