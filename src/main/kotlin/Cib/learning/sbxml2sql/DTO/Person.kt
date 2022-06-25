@@ -1,18 +1,20 @@
 package Cib.learning.sbxml2sql.DTO
 
+import lombok.Getter
 import java.util.*
 import javax.xml.bind.annotation.*
 import kotlin.collections.ArrayList
 
 @XmlRootElement(name = "Person")
 @XmlAccessorType(XmlAccessType.FIELD)
+//@Getter
 data class Person(
         private var id: Int = 0,
         @field:XmlElement
-        private val name: String? ,
+        var name: String? ,
         @field:XmlElement
-        private val birthday: Date?,
+        var birthday: Date?,
         @XmlElementWrapper(name = "hobbies")
         @field:XmlElement(name = "hobby")
-        val hobbies: List<hobby>?
-){constructor():this(0,null,null,null) }
+        var hobbies: List<hobby>?
+) {constructor():this(0,"",null, null)}
