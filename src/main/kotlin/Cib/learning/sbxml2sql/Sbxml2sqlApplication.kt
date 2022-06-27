@@ -6,11 +6,15 @@ import Cib.learning.sbxml2sql.Service.Arguments
 import Cib.learning.sbxml2sql.Service.Xml
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.context.annotation.Configuration
+import org.springframework.integration.config.EnableIntegration
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.util.*
 
 @SpringBootApplication
+@Configuration
+@EnableIntegration
 class Sbxml2sqlApplication
 
 fun main(args: Array<String>) {
