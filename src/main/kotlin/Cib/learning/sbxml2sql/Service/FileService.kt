@@ -14,7 +14,7 @@ import java.io.File
 import java.util.logging.FileHandler
 
 
-class FileService {
+class FileService {}
 /*    lateinit var FILE_PATTERN:String
     lateinit var OUTPUT_LOCATION:String
     lateinit var directory:File
@@ -31,7 +31,7 @@ class FileService {
         fp.get(directory, filter)
         return fp
     }
-
+/*
     @Bean
     @ServiceActivator(inputChannel = "fileChannel")
     fun fileWritingMessageHandler(): MessageHandler? {
@@ -39,4 +39,3 @@ class FileService {
     }
 
  */
-}
