@@ -1,21 +1,16 @@
-package Cib.learning.sbxml2sql.Service
+package cib.learning.sbxml2sql.service
 
-import Cib.learning.sbxml2sql.DBConnectors.JTpqsl
-import Cib.learning.sbxml2sql.DTO.Persons
-import org.slf4j.LoggerFactory
+import cib.learning.sbxml2sql.dto.Persons
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.integration.annotation.ServiceActivator
 import org.springframework.stereotype.Component
 import org.springframework.stereotype.Service
 import java.io.File
-import java.nio.file.Files
-import java.nio.file.Paths
-import java.util.*
+
 //@Component
 @EnableAutoConfiguration //else get Could not autowire. No beans of 'File' type found. on fun execute
 @Service
 class FileXml2Db {
-    private val log = LoggerFactory.getLogger(FileXml2Db::class.java)
     @ServiceActivator
     fun execute(file: File): Persons {
         val pers: Persons = Xml().getPerson(file.canonicalPath)

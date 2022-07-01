@@ -1,6 +1,6 @@
-package Cib.learning.sbxml2sql.Service
+package cib.learning.sbxml2sql.service
 
-import Cib.learning.sbxml2sql.DTO.Persons
+import cib.learning.sbxml2sql.dto.Persons
 import java.io.FileNotFoundException
 import java.io.FileReader
 import java.io.FileWriter

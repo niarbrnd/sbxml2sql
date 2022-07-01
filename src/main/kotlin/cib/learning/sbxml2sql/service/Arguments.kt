@@ -1,4 +1,4 @@
-package Cib.learning.sbxml2sql.Service
+package cib.learning.sbxml2sql.service
 
 import java.util.*
 

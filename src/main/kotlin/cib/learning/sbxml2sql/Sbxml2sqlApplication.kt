@@ -1,18 +1,9 @@
-package Cib.learning.sbxml2sql
+package cib.learning.sbxml2sql
 
-import Cib.learning.sbxml2sql.DBConnectors.JTpqsl
-import Cib.learning.sbxml2sql.DTO.Persons
-import Cib.learning.sbxml2sql.Service.Arguments
-import Cib.learning.sbxml2sql.Service.Xml
-import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Configuration
-import org.springframework.context.annotation.ImportResource
 import org.springframework.integration.config.EnableIntegration
-import java.nio.file.Files
-import java.nio.file.Paths
-import java.util.*
 
 @SpringBootApplication
 @Configuration

@@ -1,4 +1,4 @@
-package Cib.learning.sbxml2sql.DTO
+package cib.learning.sbxml2sql.dto
 
 import lombok.Getter
 import javax.xml.bind.annotation.XmlAccessType

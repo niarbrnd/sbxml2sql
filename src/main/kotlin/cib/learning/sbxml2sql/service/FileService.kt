@@ -1,17 +1,4 @@
-package Cib.learning.sbxml2sql.Service
-
-import Cib.learning.sbxml2sql.Adapters.FilePoller
-import org.springframework.context.annotation.Bean
-import org.springframework.integration.annotation.InboundChannelAdapter
-import org.springframework.integration.annotation.Poller
-import org.springframework.integration.annotation.ServiceActivator
-import org.springframework.integration.channel.DirectChannel
-import org.springframework.integration.core.MessageSource
-import org.springframework.integration.file.filters.SimplePatternFileListFilter
-import org.springframework.messaging.MessageChannel
-import org.springframework.messaging.MessageHandler
-import java.io.File
-import java.util.logging.FileHandler
+package cib.learning.sbxml2sql.service
 
 
 class FileService {}

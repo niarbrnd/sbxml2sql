@@ -1,4 +1,4 @@
-package Cib.learning.sbxml2sql.DTO
+package cib.learning.sbxml2sql.dto
 
 import javax.xml.bind.annotation.XmlAccessType
 import javax.xml.bind.annotation.XmlAccessorType
@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement
 
 @XmlRootElement(name = "hobby")
 @XmlAccessorType(XmlAccessType.FIELD)
-data class hobby(
+data class Hobby(
         @field:XmlElement
         var complexity: Int,
         @field:XmlElement

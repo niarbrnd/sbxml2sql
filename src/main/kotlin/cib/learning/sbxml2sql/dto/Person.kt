@@ -1,9 +1,7 @@
-package Cib.learning.sbxml2sql.DTO
+package cib.learning.sbxml2sql.dto
 
-import lombok.Getter
 import java.util.*
 import javax.xml.bind.annotation.*
-import kotlin.collections.ArrayList
 
 @XmlRootElement(name = "Person")
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -16,5 +14,5 @@ data class Person(
         var birthday: Date?,
         @XmlElementWrapper(name = "hobbies")
         @field:XmlElement(name = "hobby")
-        var hobbies: List<hobby>?
+        var Hobbies: List<Hobby>?
 ) {constructor():this(0,"",null, null)}
