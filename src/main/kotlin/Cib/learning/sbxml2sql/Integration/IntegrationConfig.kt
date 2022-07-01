@@ -1,6 +1,7 @@
 package Cib.learning.sbxml2sql.Integration
 
 import Cib.learning.sbxml2sql.DTO.Persons
+import Cib.learning.sbxml2sql.Service.FileXml2Db
 import Cib.learning.sbxml2sql.Service.Xml
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -37,11 +38,14 @@ class IntegrationConfig {
         fwmh.setExpectReply(false)
         return fwmh
     }
+    fun fileCheck(file:File){
+        println(file.canonicalPath)
+    }
 
     @Bean
     fun fileReadingFlow00(): IntegrationFlow = inputFlow()
     fun inputFlow()= IntegrationFlows.from("fileInputChannel")
-        //.handle(::fileWritingMessageHandler)
+        .handle(FileXml2Db(),"execute")
         .channel("nullChannel")
         .get()
 }
