@@ -16,6 +16,7 @@ import java.io.File
 @Configuration
 @EnableIntegration
 class IntegrationConfig {
+    val xml=FileXml2Db()
     @Bean
     fun fileInputChannel(): MessageChannel? {
         return DirectChannel()
@@ -39,7 +40,8 @@ class IntegrationConfig {
     @Bean
     fun fileReadingFlow00(): IntegrationFlow = inputFlow()
     fun inputFlow()= IntegrationFlows.from("fileInputChannel")
-        .handle(FileXml2Db(),"execute")
+        .handle(xml,"execute")
+        .handle(xml,"remove")
         .channel("nullChannel")
         .get()
 }

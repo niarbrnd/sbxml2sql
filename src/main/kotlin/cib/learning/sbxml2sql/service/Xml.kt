@@ -1,10 +1,7 @@
 package cib.learning.sbxml2sql.service
 
 import cib.learning.sbxml2sql.dto.Persons
-import java.io.FileNotFoundException
-import java.io.FileReader
-import java.io.FileWriter
-import java.io.IOException
+import java.io.*
 import javax.xml.bind.JAXBContext
 import javax.xml.bind.JAXBException
 import javax.xml.bind.Marshaller
@@ -17,7 +14,6 @@ class Xml {
         try {
             println("FileReader "+pathtoxml)
             filexml =FileReader(pathtoxml.toString())
-
         } catch (e: FileNotFoundException) {
             println("file xml $pathtoxml not found")
             e.printStackTrace()

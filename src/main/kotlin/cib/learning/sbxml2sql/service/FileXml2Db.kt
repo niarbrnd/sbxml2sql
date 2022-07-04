@@ -12,7 +12,7 @@ import java.io.File
 @Service
 class FileXml2Db {
     @ServiceActivator
-    fun execute(file: File): Persons {
+    fun execute(file: File): File {
         val pers: Persons = Xml().getPerson(file.canonicalPath)
         println(pers)
         //Boolean save = new xml().exportPersontoFile(con.getPersons(),options.get("-xmlout"));
@@ -20,6 +20,10 @@ class FileXml2Db {
 //        conjtemplate.resource = resource
 //        conjtemplate.save(pers)
 //        val save: Boolean = Xml().exportPersontoFile(conjtemplate.getPersons(), options["-xmlout"]!!)
-        return pers
+        return file
+    }
+    @ServiceActivator
+    fun remove(file: File): Boolean {
+        return file.delete()
     }
 }
