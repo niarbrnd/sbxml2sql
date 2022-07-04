@@ -28,6 +28,7 @@ class IntegrationConfig {
         frms.setDirectory(File("c:\\share\\in"))
         return frms
     }
+
 //    @Bean()
 //    @ServiceActivator (inputChannel = "fileInputChannel")
 //    fun fileWritingMessageHandler():FileWritingMessageHandler {
